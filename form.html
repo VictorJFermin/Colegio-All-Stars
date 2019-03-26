@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de Costos Misceláneos</title>
+</head>
+
+<body>
+	<h1>Formulario de Costos Misceláneos</h1>
+	<p>Ingrese todos los costos incurridos durante la demonstración. Todos los campos deben ser llenados para someter la forma</p>
+	<form action ="" method="post">
+		<div>
+			<label for="name">Nombre de Artículo: </label> <select id="name" name="article_name">
+				<option value="aceite"> Aceite </option>
+				<option value="servilletas"> Servilletas </option>
+				<option value="platos"> Platos </option>
+				<option value="palillos"> Palillos </option>
+			</select>
+		</div>
+		<div>
+			<label for="quantity">Cantidad</label> <select id="quantity" name="article_quantity">
+				<option value="aceite"> Aceite </option>
+				<option value="aceite"> Aceite </option>
+				<option value="aceite"> Aceite </option>
+				<option value="aceite"> Aceite </option>
+			</select>
+		</div>
+		<div>
+			<label for="price">Precio</label> <input type="number" id="price" name="article_price">
+		</div>
+		<div class="button">
+			<button type="add_button">Añadir otro Artículo</button>
+		</div>
+		<div>
+			<label for="total">Total</label> <input type="number" id="total" name="articles_total" readonly>
+		</div>
+		<div>
+			<label for="photo">Evidencia de costos</label> <input type="file" id="evidence" name="article_evidence" accept="image/*" multiple>
+		</div>
+		<div class="submit_button">
+			<button type="submit">Someter</button>
+		</div>
+		<div class="save_button">
+			<button type="submit">Guardar</button>
+		</div>
+		<div class="cancel_button">
+			<button type="reset">Cancelar</button>
+		</div>
+	</form>
+</body>
+
+</html>
